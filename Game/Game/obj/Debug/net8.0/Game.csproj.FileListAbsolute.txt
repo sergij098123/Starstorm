@@ -1,0 +1,14 @@
+P:\Game\Game\bin\Debug\net8.0\Game.exe
+P:\Game\Game\bin\Debug\net8.0\Game.deps.json
+P:\Game\Game\bin\Debug\net8.0\Game.runtimeconfig.json
+P:\Game\Game\bin\Debug\net8.0\Game.dll
+P:\Game\Game\bin\Debug\net8.0\Game.pdb
+P:\Game\Game\obj\Debug\net8.0\Game.GeneratedMSBuildEditorConfig.editorconfig
+P:\Game\Game\obj\Debug\net8.0\Game.AssemblyInfoInputs.cache
+P:\Game\Game\obj\Debug\net8.0\Game.AssemblyInfo.cs
+P:\Game\Game\obj\Debug\net8.0\Game.csproj.CoreCompileInputs.cache
+P:\Game\Game\obj\Debug\net8.0\Game.dll
+P:\Game\Game\obj\Debug\net8.0\refint\Game.dll
+P:\Game\Game\obj\Debug\net8.0\Game.pdb
+P:\Game\Game\obj\Debug\net8.0\Game.genruntimeconfig.cache
+P:\Game\Game\obj\Debug\net8.0\ref\Game.dll
