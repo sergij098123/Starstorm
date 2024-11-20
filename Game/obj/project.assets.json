@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "P:\\Game\\Game\\Game.csproj",
+      "projectUniqueName": "C:\\Users\\Alex\\Documents\\GitHub\\Starstorm\\Game\\Game.csproj",
       "projectName": "Game",
-      "projectPath": "P:\\Game\\Game\\Game.csproj",
+      "projectPath": "C:\\Users\\Alex\\Documents\\GitHub\\Starstorm\\Game\\Game.csproj",
       "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-      "outputPath": "P:\\Game\\Game\\obj\\",
+      "outputPath": "C:\\Users\\Alex\\Documents\\GitHub\\Starstorm\\Game\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",

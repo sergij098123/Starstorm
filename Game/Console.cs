@@ -71,9 +71,9 @@ namespace Game.console
             string input = Console.ReadLine();
 
             // Перевiрка введення
-            if (!int.TryParse(input, out userInput) || userInput < 1 || userInput > 10)
+            if (!int.TryParse(input, out userInput) || userInput < 1 || userInput > 20)
             {
-                Console.WriteLine("Некоректне введення! Введiть число вiд 1 до 10.");
+                Console.WriteLine("Некоректне введення! Введiть число вiд 1 до 20.");
                 continue;
             }
 
@@ -87,7 +87,7 @@ namespace Game.console
             {
                 // Вивести пiдказку, залежно вiд того, наскiльки близько до правильного значення
                 int difference = Math.Abs(userInput - correctValue);
-                if (difference <= 2)
+                if (difference <= 3)
                 {
                     Console.WriteLine("Непогано, ви дуже близько до правильного значення!");
                 }
