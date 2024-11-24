@@ -12,6 +12,7 @@ namespace Program
         static void Main() 
         {   
             Console.OutputEncoding = System.Text.Encoding.UTF8;
+            Thread.Sleep(2000);
             Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
 
             //const int CnsWidth = Console.WindowWidth;

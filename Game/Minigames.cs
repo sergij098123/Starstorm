@@ -57,7 +57,7 @@ namespace Game.minigames
             MyConsole.ProgressBar();
 
             Console.WriteLine("\nДвигун запущенно!");
-            Thread.Sleep(1500);
+            Thread.Sleep(500);
             return true;
         }
         public static void navigation(){
@@ -71,7 +71,7 @@ namespace Game.minigames
         bool systemRepaired = false;
         //int attempts = 5; // Кількість спроб для гравця
 
-        Console.WriteLine("⚠️ Поломка системи життєзабезпечення! ⚠️");
+        //Console.WriteLine(" Поломка системи життєзабезпечення! ");
         //Console.WriteLine("Ви маєте відремонтувати її за 5 кроків, інакше корабель буде втрачено.\n");
 
         // Цикл для спроб
@@ -79,11 +79,11 @@ namespace Game.minigames
         {
             //Console.WriteLine($"Залишилось спроб: {attempts}");
             Console.WriteLine("Виберіть дію:");
-            Console.WriteLine("1. Перевірити кабелі");
-            Console.WriteLine("2. Перезапустити систему");
-            Console.WriteLine("3. Змінити резервний запобіжник");
-            Console.WriteLine("4. Затягнути з'єднання трубопроводу");
-            Console.WriteLine("5. Відправити сигнал SOS");
+            Console.WriteLine(" 1. Перевірити кабелі");
+            Console.WriteLine(" 2. Перезапустити систему");
+            Console.WriteLine(" 3. Змінити резервний запобіжник");
+            Console.WriteLine(" 4. Затягнути з'єднання трубопроводу");
+            Console.WriteLine(" 5. Відправити сигнал SOS");
 
             // Введення дії від гравця
             Console.Write("Ваш вибір: ");
@@ -92,7 +92,7 @@ namespace Game.minigames
 
             if (!isValid || choice < 1 || choice > 5)
             {
-                Console.WriteLine("⛔ Неправильна дія! Спробуйте ще раз.\n");
+                Console.WriteLine("Неправильна дія! Спробуйте ще раз.\n");
                 continue;
             }
 
@@ -101,16 +101,16 @@ namespace Game.minigames
             if (choice == correctAction)
             {
                 systemRepaired = true;
-                Console.WriteLine("\n✅ Ви успішно відремонтували систему життєзабезпечення! Корабель врятовано.");
+                Console.WriteLine("\nВи успішно відремонтували систему життєзабезпечення! Корабель врятовано.");
             }
             else
             {
-                Console.WriteLine("❌ Ця дія не допомогла. Проблема залишається.");
+                Console.WriteLine("Ця дія не допомогла. Проблема залишається.");
                 //attempts--;
             }
 
             Console.WriteLine();
-            Thread.Sleep(1000); // Додаємо паузу для більшого драматизму
+            //Thread.Sleep(1000); // Додаємо паузу для більшого драматизму
         }
 
         //if (!systemRepaired)
