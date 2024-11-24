@@ -8,7 +8,7 @@ namespace Game.print
 {
     public class Print()
     {
-        public static void line(byte Width, string symb)
+        public static void line(int Width, string symb)
         {
             for (var i = 0; i < Width; i++)
                 Console.Write(symb);
@@ -25,7 +25,7 @@ namespace Game.print
         }
         public static void dialoge(string text, string speaker)
         {
-            byte ScrWidth = 120;
+            var ScrWidth = Console.WindowWidth;
             //Console.Clear();
             switch (speaker)
             {

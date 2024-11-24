@@ -1,4 +1,6 @@
-﻿using Game;
+﻿using System.Media;
+using System.Xml;
+using Game;
 using Game.print;
 using Game.minigames;
 using Game.console;
@@ -9,8 +11,11 @@ namespace Program
     {
         static void Main() 
         {   
-            const byte ScrWidth = 120;
-            const byte ScrHeight = 30;
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+            Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
+
+            //const int CnsWidth = Console.WindowWidth;
+            //const int CnsHeight = Console.WindowHeight;
 
             Print.dialoge("Що... що сталося? Все темне... Що я бачу?", "zenon");
             Print.action("Зенон Хелкс приходить до тями пiсля катастрофи. На екранi—повна темрява, але з часом його очi починають намагатися \n фокусуватися. Щось вiн бачить — розмитi контури та тiнi, але зiр все ще серйозно порушений.");
