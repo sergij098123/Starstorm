@@ -4,6 +4,8 @@ using Game;
 using Game.print;
 using Game.minigames;
 using Game.console;
+using Game.cheat;
+using Game.dialoges;
 
 namespace Program
 {
@@ -12,15 +14,17 @@ namespace Program
         static void Main() 
         {   
             Console.OutputEncoding = System.Text.Encoding.UTF8;
-            Thread.Sleep(2000);
+            Console.WriteLine("Click to start:");
+            Console.ReadKey(true);
+            MyConsole.ClearLine(1);
             Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
 
             //const int CnsWidth = Console.WindowWidth;
             //const int CnsHeight = Console.WindowHeight;
 
-            Print.dialoge("Що... що сталося? Все темне... Що я бачу?", "zenon");
-            Print.action("Зенон Хелкс приходить до тями пiсля катастрофи. На екранi—повна темрява, але з часом його очi починають намагатися \n фокусуватися. Щось вiн бачить — розмитi контури та тiнi, але зiр все ще серйозно порушений.");
-            Print.action("Зенон намагається встати, але орiєнтується дуже важко. Всi кольори виглядають блякло, а навколишнi об'єкти здаються лише розмитими силуэтами.");
+            Print.dialoge(Text.zenon(1),"zenon");
+            Print.action(Text.action(1));
+            Print.action(Text.action(2));
             Print.dialoge("Зеноне, ти в порядку? Ти з нами? Система життєзабезпечення працює, але ми вийшли з орбiти. Зоряний Вихор змiнив" +
                 " усi \n навколишнi поля. Це не просто аномалiя... твої органи зору, схоже, теж пошкодженi.", "radio");
             Print.action("Зенон важко пiдводиться i починає рухатися по кораблю, намагаючись знайти потрiбнi системи для ремонту. Вiн може \n бачити лише певнi контури, але деталей не вистачає для повної орiєнтацiї.");

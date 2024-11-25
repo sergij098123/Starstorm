@@ -8,11 +8,12 @@ namespace Game.console
 {
     internal class MyConsole
     {
-        public static void ClearLine(int num)
+        public static void ClearLine(int Width)
         {
-            for (int i = 0; i < num; i++) {
+            Width = Console.WindowWidth;
+            for (int i = 0; i < Width; i++) {
                 Console.SetCursorPosition(0, Console.CursorTop - 1);
-                Console.Write(new string(' ', num * 120));
+                Console.Write(new string(' ', Width));
             }
         }
 		public static void Clear(int num)

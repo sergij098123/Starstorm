@@ -13,7 +13,7 @@ namespace Game.minigames
             string input;
 
             while (systems[3]){
-                Console.WriteLine("Виберiть, який модуль корабля вiдремонтувати:");
+                Console.WriteLine("\nВиберiть, який модуль корабля вiдремонтувати:");
                 Console.WriteLine("    1.Двигун");
                 Console.WriteLine("    2.Навiгацiя");
                 Console.WriteLine("    3.Життєзабезпечення");
@@ -37,6 +37,9 @@ namespace Game.minigames
                 case "Життєзабазпечення":
                     minigame1.heath();
                     systems[2] = true;
+                    break;
+                case "skip":
+                    systems[3] = true;
                     break;
                 default:
                     Console.WriteLine("Введіть правильне значення!");
