@@ -5,6 +5,7 @@ using Game.print;
 using Game.minigames;
 using Game.console;
 using Game.dialoges;
+using Game.json;
 
 namespace Program
 {
@@ -20,6 +21,8 @@ namespace Program
 
             //const int CnsWidth = Console.WindowWidth;
             //const int CnsHeight = Console.WindowHeight;
+
+            _ = Shop.test();
 
             Print.dialoge(Text.zenon(1),"zenon");
             Print.action(Text.action(1));
