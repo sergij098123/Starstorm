@@ -39,7 +39,7 @@ namespace Game.minigames
                     systems[2] = true;
                     break;
                 case "skip":
-                    systems[3] = true;
+                    systems[3] = false;
                     break;
                 default:
                     Console.WriteLine("Введіть правильне значення!");
