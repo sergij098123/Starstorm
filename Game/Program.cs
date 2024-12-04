@@ -5,7 +5,7 @@ using Game.print;
 using Game.minigames;
 using Game.console;
 using Game.dialoges;
-using Game.json;
+using Game.Shops;
 
 namespace Program
 {
@@ -17,12 +17,10 @@ namespace Program
             Console.WriteLine("Click to start:");
             Console.ReadKey(true);
             MyConsole.ClearLine(1);
-            Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
+            //Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
 
             //const int CnsWidth = Console.WindowWidth;
             //const int CnsHeight = Console.WindowHeight;
-
-            _ = Shop.test();
 
             Print.dialoge(Text.zenon(1),"zenon");
             Print.action(Text.action(1));
@@ -35,6 +33,15 @@ namespace Program
             Print.action(Text.action(5));
 
             minigame1.choiсe();
+
+            Print.dialoge(Text.radio(3), "radio");
+            Print.dialoge(Text.radio(4), "radio");
+            Print.dialoge(Text.radio(5), "radio");
+            Print.dialoge(Text.radio(6), "radio");
+            Print.dialoge(Text.radio(7), "radio");
+            Print.dialoge(Text.radio(8), "radio");
+            Print.dialoge(Text.radio(9), "radio");
+            Print.dialoge(Text.unknown(1),"unknown");
 
             Console.ReadKey(true);
         }

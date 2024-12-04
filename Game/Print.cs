@@ -26,7 +26,6 @@ namespace Game.print
         public static void dialoge(string text, string speaker)
         {
             var ScrWidth = Console.WindowWidth;
-            //Console.Clear();
             switch (speaker)
             {
                 case "zenon":
@@ -43,6 +42,19 @@ namespace Game.print
                     line(ScrWidth, "═");
                     Console.WriteLine(" *" + text);
 
+                    break;
+                case "unknown":
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+
+                    line(ScrWidth, "═");
+                    Console.WriteLine("-?" + text);
+
+                    break;
+                default:
+                    Console.ForegroundColor = ConsoleColor.Gray;
+
+                    line(ScrWidth, "═");
+                    Console.WriteLine("--" + text);
                     break;
             }
             line(ScrWidth, "═");
