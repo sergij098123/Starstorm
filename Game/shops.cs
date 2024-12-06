@@ -8,6 +8,6 @@ namespace Game.Shops
     static public class Shop
     {
 
-        static public int Balance = 10;
+
     }
 }

@@ -59,7 +59,8 @@ namespace Game.print
             }
             line(ScrWidth, "═");
 
-            Console.WriteLine(" ");
+            Console.ReadKey(true);
+            Console.WriteLine("");
             Console.ResetColor();
         }
         public static void action(string text){
