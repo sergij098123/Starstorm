@@ -1,7 +1,4 @@
-﻿using System.Media;
-using System.Xml;
-using Game;
-using Game.print;
+﻿using Game.print;
 using Game.minigames;
 using Game.console;
 using Game.dialoges;
@@ -20,7 +17,8 @@ namespace Game
             MyConsole.ClearLine(1);
             //Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
 
-            Console.WriteLine(Player.Inv.Balance);
+            
+            Console.WriteLine(Player.Money);
 
             Print.dialoge(Text.zenon(1),"zenon");
             Print.action(Text.action(1));

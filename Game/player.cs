@@ -6,10 +6,17 @@ using Game.dialoges;
 using Game.Shops;
 namespace Game.player{
     static public class Player{
-        static public class Inv{
-            static public int Balance = 10;
+        static public int Money = 10;
+        static public class Weapon{
+            static public string Name = "wrench";
+            static public double Damage = 2;
+        }
+        static public class Armor{
+            static public string Name = "cosmic suit";
+            static public double Protection = 0.5;
         }
         public const string Name = "Zenon";
         public const string Surname = "Helx";
+        public const double HP = 20;
     }
 }
