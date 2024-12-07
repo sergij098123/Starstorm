@@ -4,6 +4,7 @@ using Game.console;
 using Game.dialoges;
 using Game.Shops;
 using Game.player;
+using Microsoft.Win32.SafeHandles;
 
 namespace Game
 {
@@ -18,7 +19,7 @@ namespace Game
             //Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
 
             
-            Console.WriteLine(Player.Money);
+
 
             Print.dialoge(Text.zenon(1),"zenon");
             Print.action(Text.action(1));
@@ -52,6 +53,32 @@ namespace Game
             Print.action(Text.action(9.1));
             Print.dialoge(Text.unknown(1),"unknown");
             Print.action(Text.action(10));
+
+            Print.action(Text.action(11));
+            Print.dialoge(Text.zenon(9), "zenon");
+            Print.action(Text.action(12));
+            Print.dialoge(Text.zenon(10), "zenon");
+            Print.action(Text.action(13));
+            Print.dialoge(Text.unknown(3), "unknown");
+            Print.dialoge(Text.zenon(11), "zenon");
+            Print.action(Text.action(14));
+            Print.dialoge(Text.radio(10), "radio");
+            Print.action(Text.action(15));
+            Print.dialoge(Text.unknown(4), "unknown");
+
+            int input = Int16.Parse(Console.ReadLine());
+            bool choose = true;
+            while (choose){
+                if(input == 1){
+                    choose = false;
+                } 
+                else if(input == 2){
+                    choose = true;
+                } 
+                else {
+                    Console.WriteLine("?");
+                }
+            }
 
             Console.ReadKey(true);
         }
