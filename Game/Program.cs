@@ -4,6 +4,7 @@ using Game.console;
 using Game.dialoges;
 using Game.Shops;
 using Game.player;
+using Game.selects;
 using Microsoft.Win32.SafeHandles;
 
 namespace Game
@@ -66,19 +67,7 @@ namespace Game
             Print.action(Text.action(15));
             Print.dialoge(Text.unknown(4), "unknown");
 
-            int input = Int16.Parse(Console.ReadLine());
-            bool choose = true;
-            while (choose){
-                if(input == 1){
-                    choose = false;
-                } 
-                else if(input == 2){
-                    choose = true;
-                } 
-                else {
-                    Console.WriteLine("?");
-                }
-            }
+            part1.main();
 
             Console.ReadKey(true);
         }

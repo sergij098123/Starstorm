@@ -50,6 +50,11 @@ namespace Game.print
                     Console.WriteLine("-?" + text);
 
                     break;
+                case "game":
+                    Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                    Print.line(ScrWidth, "═");
+                    Console.WriteLine("→" + text);
+                    break;
                 default:
                     Console.ForegroundColor = ConsoleColor.Gray;
 
