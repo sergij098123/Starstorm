@@ -1,0 +1,15 @@
+C:\Users\Alex\Documents\GitHub\Starstorm\Game\bin\Release\net8.0\win-x64\Game.exe
+C:\Users\Alex\Documents\GitHub\Starstorm\Game\bin\Release\net8.0\win-x64\Game.deps.json
+C:\Users\Alex\Documents\GitHub\Starstorm\Game\bin\Release\net8.0\win-x64\Game.runtimeconfig.json
+C:\Users\Alex\Documents\GitHub\Starstorm\Game\bin\Release\net8.0\win-x64\Game.dll
+C:\Users\Alex\Documents\GitHub\Starstorm\Game\bin\Release\net8.0\win-x64\Game.pdb
+C:\Users\Alex\Documents\GitHub\Starstorm\Game\obj\Release\net8.0\win-x64\Game.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alex\Documents\GitHub\Starstorm\Game\obj\Release\net8.0\win-x64\Game.AssemblyInfoInputs.cache
+C:\Users\Alex\Documents\GitHub\Starstorm\Game\obj\Release\net8.0\win-x64\Game.AssemblyInfo.cs
+C:\Users\Alex\Documents\GitHub\Starstorm\Game\obj\Release\net8.0\win-x64\Game.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Documents\GitHub\Starstorm\Game\obj\Release\net8.0\win-x64\Game.sourcelink.json
+C:\Users\Alex\Documents\GitHub\Starstorm\Game\obj\Release\net8.0\win-x64\Game.dll
+C:\Users\Alex\Documents\GitHub\Starstorm\Game\obj\Release\net8.0\win-x64\refint\Game.dll
+C:\Users\Alex\Documents\GitHub\Starstorm\Game\obj\Release\net8.0\win-x64\Game.pdb
+C:\Users\Alex\Documents\GitHub\Starstorm\Game\obj\Release\net8.0\win-x64\Game.genruntimeconfig.cache
+C:\Users\Alex\Documents\GitHub\Starstorm\Game\obj\Release\net8.0\win-x64\ref\Game.dll

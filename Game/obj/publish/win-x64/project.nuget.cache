@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "bW7eRc6oDb0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Alex\\Documents\\GitHub\\Starstorm\\Game\\Game.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Alex\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.7\\microsoft.net.illink.tasks.8.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}

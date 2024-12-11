@@ -1,0 +1,5 @@
+C:\Users\Alex\Documents\GitHub\Starstorm\Game\bin\Debug\net8.0\publish\Game.exe
+C:\Users\Alex\Documents\GitHub\Starstorm\Game\bin\Debug\net8.0\publish\Game.dll
+C:\Users\Alex\Documents\GitHub\Starstorm\Game\bin\Debug\net8.0\publish\Game.deps.json
+C:\Users\Alex\Documents\GitHub\Starstorm\Game\bin\Debug\net8.0\publish\Game.runtimeconfig.json
+C:\Users\Alex\Documents\GitHub\Starstorm\Game\bin\Debug\net8.0\publish\Game.pdb
