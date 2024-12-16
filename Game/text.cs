@@ -1,7 +1,7 @@
 using System.Collections;
 
-namespace Game.dialoges{
-    public class Text(){
+namespace Game.text{
+    public class Text(){ // * Тут зберігаються всі текста
         public static string zenon(double id){
             string sms;
             switch(id){
