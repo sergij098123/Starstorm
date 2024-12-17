@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Game.console
 {
-    internal class MyConsole
+    public static class MyConsole
     {
+        public static Random random = new Random();
         public static void ClearLine(int Width)
         {
             Width = Console.WindowWidth;
