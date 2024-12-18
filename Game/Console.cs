@@ -8,7 +8,6 @@ namespace Game.console
 {
     public static class MyConsole
     {
-        public static Random random = new Random();
         public static void ClearLine(int Width)
         {
             Width = Console.WindowWidth;
