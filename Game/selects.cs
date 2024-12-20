@@ -3,7 +3,6 @@ using Game.minigames;
 using Game.console;
 using Game.text;
 using Game.Shops;
-using Game.player;
 using System.Security.Cryptography.X509Certificates;
 namespace Game.selects{
     public static class Select1{

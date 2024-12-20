@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Game.console
 {
-    internal class MyConsole
+    public static class MyConsole
     {
         public static void ClearLine(int Width)
         {

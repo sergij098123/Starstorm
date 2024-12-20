@@ -3,7 +3,6 @@ using Game.minigames;
 using Game.console;
 using Game.text;
 using Game.Shops;
-using Game.player;
 using Game.selects;
 
 namespace Game.parts{
