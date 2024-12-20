@@ -17,6 +17,7 @@ namespace Game.figth{
             var enemy_hp = Stat.Enemy.hp(name);
             var enemy_damage = Stat.Enemy.damage(name);
             var randomAtack = GRandom.random.Next(-1,1);
+            bool run = false;
             int i = 0;
             byte spare = 0;
             string input;
@@ -27,6 +28,7 @@ namespace Game.figth{
 
             while(true){
                 Console.ReadKey();
+                Console.Clear();
                 if(hp <= 0 ){
                     Console.WriteLine("\nYou loose!");
                     break;
@@ -34,17 +36,31 @@ namespace Game.figth{
                 if(enemy_hp <= 0){
                     Console.WriteLine($"\nYou win\nYou earn {i} stardust");
                     Stat.Player.Money += i;
+                    Console.ReadKey();
+                    Console.Clear();
                     break;
                 }
                 if(spare >= 100){
-                    Console.WriteLine($"\nYou win\nYou earn {i}");
+                    Console.WriteLine($"\nYou win\nYou earn {i} stardust");
                     Stat.Player.Money += i;
+                    Console.ReadKey();
+                    Console.Clear();
+                    break;
+                }
+                if(run){
+                    Console.WriteLine("You runed away");
+                    Console.ReadKey();
+                    Console.Clear();
                     break;
                 }
 
-                Console.WriteLine("1.Атакувати\n2.Пощядити\nзбіжати");
+                Console.WriteLine("1.Атакувати\n2.Пощядити\n3.збіжати\n");
                 input = Console.ReadLine();
                 switch(input){
+                    case "з":
+                    case "3":
+                        run = true;
+                        break;
                     case "1":
                     case "a":
                     case "а":
@@ -56,6 +72,7 @@ namespace Game.figth{
                     case "п":
                     case "щ":
                         spare += 20;
+                        Console.WriteLine($"Sparing: {spare}%");
                         break;
                     default: break;
                 }
