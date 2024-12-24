@@ -6,6 +6,7 @@ using Game.Shops;
 using Game.selects;
 using Game.parts;
 using System.ComponentModel;
+using Game.Items;
 
 namespace Game.statistic{
     public static class Stat{
@@ -29,15 +30,15 @@ namespace Game.statistic{
                     }
             }
         }
-        static public class Player{ // TODO Потрібна система бою
+        static public class Player{
         static public int Money = 10;
         static public class Weapon{
-            static public string Name = "wrench";
-            static public int Damage = 2;
+            static public string Name = "";
+            static public int Damage = 0;
         }
         static public class Armor{
-            static public string Name = "cosmic suit";
-            static public double Protection = 0.5;
+            static public string Name = "";
+            static public double Protection = 0;
         }
         public const string Name = "Zenon";
         public const string Surname = "Helx";

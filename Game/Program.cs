@@ -5,7 +5,11 @@ using Game.text;
 using Game.Shops;
 using Game.selects;
 using Game.parts;
-using Game.figth; // Імпортування інших файлів
+using Game.figth;
+using Game.Inventory;
+using System.Security;
+using Game.statistic;
+using Game.Items; // Імпортування інших файлів
 #pragma warning disable CS8601 //// Possible null reference assignment.
 // Я використувую такі плагіни:
 // Better Comments
@@ -19,13 +23,19 @@ namespace Game
         static public string choose = "null"; // створення "choose"
         public static void Main() 
         {   
-            
             Console.OutputEncoding = System.Text.Encoding.UTF8; // Ставлення кодування на utf 8
+
+            var items = Item.Items(); // Створення предметів
+            Stat.Player.Weapon.Name = items[0].Name;
+            Stat.Player.Weapon.Damage = items[0].Damage; // Встановлення початкової зброї
+            Stat.Player.Armor.Name = items[1].Name;
+            Stat.Player.Armor.Protection = items[1].Protection; // Встановлення початкової броні
+
             Console.WriteLine("Click to start:");
             choose = Console.ReadLine(); // * Якщо ввести "skip" при запуску можна пропустити більшу частину гри
             MyConsole.ClearLine(1);
 
-            Figth.enemy("test");
+            Inv.Items.Add(items[0]);
             
             if(choose != "skip"){
                 Part1.main();
