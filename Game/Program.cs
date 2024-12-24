@@ -10,8 +10,8 @@ using Game.Inventory;
 using System.Security;
 using Game.statistic;
 using Game.Items; // Імпортування інших файлів
-#pragma warning disable CS8601 //// Possible null reference assignment.
-// Я використувую такі плагіни:
+#pragma warning disable CS8601
+// TODO Я використувую такі плагіни:
 // Better Comments
 // exe Runner
 // git Graph
@@ -20,7 +20,6 @@ namespace Game
 {
     static class Program
     {
-        static public string choose = "null"; // створення "choose"
         public static void Main() 
         {   
             Console.OutputEncoding = System.Text.Encoding.UTF8; // Ставлення кодування на utf 8
@@ -32,15 +31,12 @@ namespace Game
             Stat.Player.Armor.Protection = items[1].Protection; // Встановлення початкової броні
 
             Console.WriteLine("Click to start:");
-            choose = Console.ReadLine(); // * Якщо ввести "skip" при запуску можна пропустити більшу частину гри
-            MyConsole.ClearLine(1);
+            Console.ReadLine();
+            MyConsole.ClearLine(2);
 
-            Inv.Items.Add(items[0]);
+            Inv.GUI(); // Відкриття інвентаря
             
-            if(choose != "skip"){
-                Part1.main();
-            }
-
+            Part1.main();
             Print.dialoge(" ×The end of game× ", "game"); // * Кінец гри
         }
     }
