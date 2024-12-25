@@ -1,0 +1,2 @@
+C:\Users\sergi\GitHub\Starstorm\Game\bin\Release\net8.0\publish\win-x86\Game.pdb
+C:\Users\sergi\GitHub\Starstorm\Game\bin\Release\net8.0\publish\win-x86\Game.exe
