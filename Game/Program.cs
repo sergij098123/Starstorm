@@ -34,7 +34,7 @@ namespace Game
             Console.ReadLine();
             MyConsole.ClearLine(2);
 
-            Inv.GUI(); // Відкриття інвентаря
+            
             
             Part1.main();
             Print.dialoge(" ×The end of game× ", "game"); // * Кінец гри
